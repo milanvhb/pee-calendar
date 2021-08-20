@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DoctorHome">
+   <children>
+      <AnchorPane layoutX="200.0" layoutY="84.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="23.0" layoutY="116.0" mnemonicParsing="false" onAction="#insertPatientAction" prefHeight="62.0" prefWidth="154.0" style="-fx-background-color: lightblue;" text="Insert Patient">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Milan/Documents/Summer%20School/add_user_group_woman_man_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="-2.0" prefHeight="400.0" prefWidth="208.0" style="-fx-background-color: #add8e6;" />
+      <Button layoutX="391.0" layoutY="200.0" mnemonicParsing="false" onAction="#updatePatientCycleAction" prefHeight="62.0" prefWidth="194.0" style="-fx-background-color: lightblue;" text="Update Patient Cycle">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Milan/Documents/Summer%20School/update_user_40px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="150.0" fitWidth="394.0" layoutX="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back_login.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

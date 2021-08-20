@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DoctorLogin">
+   <children>
+      <AnchorPane layoutX="246.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txtUser" layoutX="100.0" layoutY="14.0" promptText="enter your username" />
+            <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <Text layoutX="14.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <Button fx:id="btnLogin" layoutX="161.0" layoutY="92.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: lightblue;" text="Login">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Milan/Documents/Summer%20School/user_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <PasswordField fx:id="txtPassHidden" layoutX="100.0" layoutY="53.0" promptText="enter your password" />
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #add8e6;" />
+      <ImageView fitHeight="150.0" fitWidth="399.0" layoutX="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back_login.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+.hyperlink {
+    -fx-border-color: transparent;
+    -fx-padding: 4 0 4 0;
+}
+
+.day-label{
+    -fx-padding: 10 0 10 0;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(255,0,0,0.5);
+    -fx-text-fill: white;
+}
+
+.week{
+    -fx-padding: 10px;
+    -fx-background-color: rgba(0,0,255,0.5);
+}
+
+.week-label{
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 5 0;
+}
+
+.week-date{
+    -fx-font-size: 12px;
+    -fx-text-fill: lightgray;
+}
+
+.calendar-cell{
+    -fx-text-alignment: center;
+}
+
+.calendar-empty-cell{
+    -fx-background-color: transparent;
+    -fx-border-color:transparent;
+}
+
+.calendar-empty-cell:hover{
+    -fx-background-color: rgba(0,0,255, 0.1);
+}
+
+.calendar-assigned-cell{
+    -fx-background-color: rgba(0,255,0,0.5);
+    -fx-border-color:lime;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
